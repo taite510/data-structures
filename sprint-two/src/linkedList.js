@@ -28,7 +28,6 @@ var LinkedList = function() {
 
   list.contains = function(target) {
     var hasTarget = false;
-    debugger;
     var findTarget = function (target, currentNode) {
       if (currentNode.value !== target && currentNode.next !== null) {
         findTarget(target, currentNode.next);
